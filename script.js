@@ -30,6 +30,7 @@ document.querySelector(".check").addEventListener("click", function(){
         }
     }
 
+    //Comprobar si NO se acertó
     else if(guess !== secretNumber) {
     if(score > 1) {
         score--;
@@ -42,6 +43,7 @@ document.querySelector(".check").addEventListener("click", function(){
     } 
 })
 
+//Resetear el juego
 document.querySelector(".again").addEventListener("click", function(){
     secretNumber = Math.trunc(Math.random() * 20 + 1);
     score = 20;
